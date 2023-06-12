@@ -71,6 +71,6 @@
     gap: 5px;
 }
 
-.description p, .description h4 {
+.description p, .description h4, .comments p, .comments h4 {
     display: inline;
 }

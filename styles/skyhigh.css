@@ -1,0 +1,28 @@
+.grey {
+    background-color: #333;
+}
+
+#airline-logo {
+    color: white;
+}
+
+.card {
+    padding: 40px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+#image-header {
+    position: relative;
+    height: 400px;
+}
+
+#manage-form {
+    position: relative;
+    width: 70%;
+    margin: auto;
+}
+
+#airline-values-grid {
+    display: grid;
+}

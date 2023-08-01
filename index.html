@@ -4,16 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>CTF - Passport Activity</title>
-    <link rel="stylesheet" href="style.css">
+    <title>The Network</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/thenetwork.css">
   </head>
   <body>
-    <div id="header">
+    <div id="header" class="header-purple">
       <h1 id="network-logo">The Network</h1>
       <div>
-        <label for="flag-input">Enter flag: </label>
-        <input id="flag-input" name="flag-input"></input>
-        <button type="submit">Submit</button>
+        <form onsubmit="validateFlag()">
+          <label for="flag-input">Enter flag: </label>
+          <input id="flag-input" name="flag-input"></input>
+          <button type="submit">Submit</button>
+        </form>
       </div>
     </div>
     <div id="feed">
@@ -116,7 +119,7 @@
           <h4>Jane Doe</h4>
           <p>
             I am going on a well deserved holday to Japan for 3 weeks! Special thanks to 
-            <a href="./flightcompany.html">@SkyHigh</a> 
+            <a href="./skyhigh.html">@SkyHigh</a> 
             for the hospitality and tickets. Get ready for some great Japan content. #japan
             #flights #soexcited
           </p>
@@ -185,7 +188,7 @@
           <h4>Jane Doe</h4>
           <p>
             I am going on a well deserved holday to Japan for 3 weeks! Special thanks to 
-            <a href="./flightcompany.html">@SkyHigh</a> 
+            <a href="./skyhigh.html">@SkyHigh</a> 
             for the hospitality and tickets. Get ready for some great Japan content. #japan
             #flights #soexcited
           </p>
@@ -197,6 +200,6 @@
       <div>No new content to view...</div>
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-	  <script src="index.js"></script>
+	  <script src="scripts/index.js"></script>
   </body>
 </html>

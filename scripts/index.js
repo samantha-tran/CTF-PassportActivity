@@ -11,3 +11,11 @@ function toggleComments(id) {
     }
        
 }
+
+function validateFlag() {
+    if ($("#flag-input").val() === "bob2000@gmail.com") {
+        alert("Challenge complete")
+    } else {
+        alert("Invalid flag!")
+    }
+}

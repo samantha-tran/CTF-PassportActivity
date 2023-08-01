@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sky High</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/skyhigh.css">
+  </head>
+  <body>
+    <div class="flex flex-col">
+      <div id="header" class="grey">
+        <h1 id="airline-logo">Sky High Airline</h1>
+        <div>
+          <form onsubmit="validateFlag()">
+            <label for="flag-input">Enter flag: </label>
+            <input id="flag-input" name="flag-input"></input>
+            <button type="submit">Submit</button>
+        </form>
+        </div>
+      </div>
+      <div id="image-header">
+          <img class="cover" src="images/mock-plane.jpeg"/>
+          <div class="card" id="manage-form">
+            <form class="flex flex-col align-center gap-8" onsubmit="verifyBoardingDetails()">
+              <h2 class="text-center">Manage your booking</h2>
+              <div>
+                <label for="input-ref">Booking reference:</label>
+                <input id="input-ref" type="text"></input>
+              </div>
+              <div>
+                <label for="input-lname">Last name:</label>
+                <input id="input-lname" type="text"></input>
+              </div>
+              <button type="submit">Search</button>
+            </form>
+          </div>
+      </div>
+      <div class="flex gap-10">
+        <div class="card">
+          <h3>Respect</h3>
+          <p>We respect our customers and we hope you do the same to our staff. Everyone is a human being, and everyone deserves
+            to be treated with respect, regardless of the background, situation or experiences.</p>
+        </div>
+        <div class="card">
+          <h3>Passion</h3>
+          <p>We're passionate about our customers! We love to assist you with all your needs so don't be shy to ask us any questions
+            or for any additional assistance. Thank you for choosing Sky High to as your airline of choice. </p>
+        </div>
+        <div class="card">
+          <h3>Efficiency</h3>
+          <p>We try out best to make all processes as efficient as possible. From ticket purchasing to boarding, we want to
+            reduce any form of hassle. We are also always trying to improve our processes, so that things are more fast
+            each time you fly with us.</p>
+        </div>
+      </div>
+      <footer class="grey">
+        Footer
+      </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	  <script src="scripts/index.js"></script>
+    <script src="scripts/skyhigh.js"></script>
+  </body>
+</html>
